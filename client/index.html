@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vidmet - Video Calling</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Vidmet</h1>
+      <p id="status" class="status">Connecting...</p>
+    </div>
+
+    <div class="main-content">
+      <div class="videos-container" id="videos-container">
+        <div class="video-box">
+          <video id="local-video" autoplay muted playsinline></video>
+          <span class="video-label">You</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="call-mode">
+          <button id="start-call-btn" class="primary-btn">Start New Call</button>
+          <span id="call-status" class="call-status"></span>
+        </div>
+
+        <div class="peer-selector">
+          <label for="peer-select">Available Peers to Add:</label>
+          <div class="peer-input-group">
+            <select id="peer-select">
+              <option value="">Select a peer...</option>
+            </select>
+            <button id="add-peer-btn" disabled class="secondary-btn">Add to Call</button>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button id="hang-up-btn" disabled class="danger-btn">Hang Up</button>
+          <button id="toggle-video-btn" class="control-btn">Video: ON</button>
+          <button id="toggle-audio-btn" class="control-btn">Audio: ON</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html>

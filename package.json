@@ -1,0 +1,19 @@
+{
+  "name": "vidmet",
+  "version": "1.0.0",
+  "description": "Simple WebRTC video calling application",
+  "main": "server/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node server/server.js"
+  },
+  "keywords": ["webrtc", "video", "call"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {}
+}
